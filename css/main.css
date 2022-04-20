@@ -1,0 +1,80 @@
+.card {
+  text-align: center;
+  width: 450px;
+  height: 300px;
+  padding: 1.4em;
+  border-radius: 13px;
+  background: #323a49;
+}
+.card__title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #52ffa8;
+}
+.card__message {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.card__image {
+  width: 100%;
+}
+.card__image--mobile {
+  display: none;
+}
+.card__btn {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  left: 48.3%;
+  padding: 0.83rem 0.94rem;
+  border-radius: 50%;
+  transform: translateY(60px);
+  background: #52ffa8;
+}
+
+.attribution {
+  margin-top: 1.5em;
+  color: #cee3e9;
+}
+.attribution a {
+  color: #52ffa8;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 340px;
+    height: 320px;
+  }
+  .card__image {
+    display: none;
+  }
+  .card__image--mobile {
+    display: block;
+    width: 100%;
+  }
+  .card__btn {
+    left: 42.5%;
+    transform: translateY(30px);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Manrope", sans-serif;
+  height: 95vh;
+  background: #1f2632;
+}
+
+/*# sourceMappingURL=main.css.map */

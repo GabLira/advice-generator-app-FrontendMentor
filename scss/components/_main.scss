@@ -1,0 +1,68 @@
+.card {
+  text-align: center;
+  width: 450px;
+  height: 300px;
+  padding: 1.4em;
+  border-radius: 13px;
+  background: $neutral-color-dark;
+
+  &__title {
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: $primary-color-dark;
+  }
+
+  &__message {
+    font-size: 1.4rem;
+    color: $primary-text-color;
+  }
+
+  &__image {
+    width: 100%;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    left: 48.3%;
+    padding: .83rem .94rem;
+    border-radius: 50%;
+    transform: translateY(60px);
+    background: $primary-color-dark;
+  }
+}
+
+.attribution {
+  margin-top: 1.5em;
+  color: $primary-color;
+  a{
+    color: $primary-color-dark;
+
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 340px;
+    height: 320px;
+
+    &__image {
+      display: none;
+
+      &--mobile {
+        display: block;
+        width: 100%;
+      }
+    }
+    &__btn {
+      left: 42.5%;
+      transform: translateY(30px);
+    }
+  }
+}

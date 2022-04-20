@@ -1,0 +1,21 @@
+@import "variables";
+@import "components/main";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Manrope', sans-serif;
+  height: 95vh;
+  background: $accent-color;
+}
