@@ -1,4 +1,5 @@
 import {buildCardTPL} from "./templates/card-tpl.js";
+import buttonStyles from "./button-styles.js";
 
 const execute = () => {
     const container = document.querySelector('main');
@@ -17,17 +18,16 @@ const execute = () => {
             const {id, advice} = data.slip;
             const pad = '#';
 
-            console.log(idAdvice, message);
             idAdvice.innerHTML = `Advice ${pad}${id}`;
             message.innerHTML = `"${advice}"`;
         });
     };
 
     const button = document.querySelector('.card__btn');
-    button.style.cursor = 'pointer';
+    buttonStyles();
 
     button.addEventListener('click', () => {
-        setTimeout(renderAdvice, 700);
+        setTimeout(renderAdvice, 950);
     });
 }
 window.addEventListener("DOMContentLoaded", execute);

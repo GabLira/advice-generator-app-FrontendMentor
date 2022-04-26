@@ -35,11 +35,11 @@
   bottom: 135px;
   border-radius: 50%;
   padding: 0.83rem 0.94rem;
-  transition: box-shadow 350ms ease;
-  background: #52ffa8;
-}
-.card__btn:hover {
-  box-shadow: 0 2px 20px 5px #52ffa8;
+  /*
+      &:hover {
+        box-shadow: 0 2px 20px 5px $primary-color-dark;
+      }
+      */
 }
 
 .attribution {
