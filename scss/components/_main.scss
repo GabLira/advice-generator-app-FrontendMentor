@@ -7,20 +7,24 @@
   background: $neutral-color-dark;
 
   &__title {
-    font-size: .7rem;
     text-transform: uppercase;
+    font-size: .7rem;
     letter-spacing: 4px;
     color: $primary-color-dark;
   }
 
-  &__message {
-    font-size: 1.4rem;
-    color: $primary-text-color;
-  }
+  &__header {
+    @include ds-flx-column;
 
-  &__image {
-    width: 100%;
+    &--message {
+      font-size: 1.4rem;
+      color: $primary-text-color;
+    }
 
+    &--image {
+      width: 100%;
+
+    }
     &--mobile {
       display: none;
     }
@@ -28,20 +32,26 @@
 
   &__btn {
     position: absolute;
-    cursor: pointer;
     border: none;
     left: 48.3%;
-    padding: .83rem .94rem;
+    bottom: 135px;
     border-radius: 50%;
-    transform: translateY(60px);
+    padding: 0.83rem 0.94rem;
+    transition: box-shadow 350ms ease;
     background: $primary-color-dark;
+
+    &:hover {
+      box-shadow: 0 2px 20px 5px $primary-color-dark;
+    }
+
   }
 }
 
 .attribution {
   margin-top: 1.5em;
   color: $primary-color;
-  a{
+
+  a {
     color: $primary-color-dark;
 
   }
@@ -60,9 +70,10 @@
         width: 100%;
       }
     }
+
     &__btn {
       left: 42.5%;
-      transform: translateY(30px);
+      bottom: 195px;
     }
   }
 }

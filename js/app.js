@@ -13,7 +13,7 @@ const execute = () => {
                 return res.json();
             }).then(data => {
             const idAdvice = document.querySelector('.card__title');
-            const message = document.querySelector('.card__message');
+            const message = document.querySelector('.card__header--message');
             const {id, advice} = data.slip;
             const pad = '#';
 
@@ -24,8 +24,10 @@ const execute = () => {
     };
 
     const button = document.querySelector('.card__btn');
+    button.style.cursor = 'pointer';
+
     button.addEventListener('click', () => {
-        renderAdvice();
+        setTimeout(renderAdvice, 700);
     });
 }
 window.addEventListener("DOMContentLoaded", execute);

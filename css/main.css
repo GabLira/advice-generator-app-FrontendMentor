@@ -7,30 +7,39 @@
   background: #323a49;
 }
 .card__title {
-  font-size: 0.7rem;
   text-transform: uppercase;
+  font-size: 0.7rem;
   letter-spacing: 4px;
   color: #52ffa8;
 }
-.card__message {
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card__header--message {
   font-size: 1.4rem;
   color: #fff;
 }
-.card__image {
+.card__header--image {
   width: 100%;
 }
-.card__image--mobile {
+.card__header--mobile {
   display: none;
 }
 .card__btn {
   position: absolute;
-  cursor: pointer;
   border: none;
   left: 48.3%;
-  padding: 0.83rem 0.94rem;
+  bottom: 135px;
   border-radius: 50%;
-  transform: translateY(60px);
+  padding: 0.83rem 0.94rem;
+  transition: box-shadow 350ms ease;
   background: #52ffa8;
+}
+.card__btn:hover {
+  box-shadow: 0 2px 20px 5px #52ffa8;
 }
 
 .attribution {
@@ -55,7 +64,7 @@
   }
   .card__btn {
     left: 42.5%;
-    transform: translateY(30px);
+    bottom: 195px;
   }
 }
 * {
@@ -69,8 +78,8 @@ html {
 
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   font-family: "Manrope", sans-serif;
   height: 95vh;
