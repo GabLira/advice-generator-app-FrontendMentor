@@ -14,8 +14,6 @@
   }
 
   &__header {
-    @include ds-flx-column;
-
     &--message {
       font-size: 1.4rem;
       color: $primary-text-color;
@@ -25,6 +23,7 @@
       width: 100%;
 
     }
+
     &--mobile {
       display: none;
     }
@@ -34,7 +33,7 @@
     position: absolute;
     border: none;
     left: 48.3%;
-    bottom: 135px;
+    bottom: 320px;
     border-radius: 50%;
     padding: 0.83rem 0.94rem;
   }
